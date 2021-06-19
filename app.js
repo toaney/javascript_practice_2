@@ -31,7 +31,7 @@ const addTodo = () => {
 }
 
 const addNewUser = () => {
- alert("add new user");
+//  alert("add new user");
 
   let fetchUser = async() => {
     let response = await fetch( 'https://randomuser.me/api/' );
