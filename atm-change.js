@@ -5,7 +5,7 @@ const atmChangeCalculator = (itemPrice, paid, denominationArray) => {
 
   if ( changeAmt < 0 ){
     console.log(("please insert more money"))
-    return("please insert more money")
+    return
   }
 
   const calculateDenominations = (change, denominationIndex) => {
@@ -37,5 +37,5 @@ const atmChangeCalculator = (itemPrice, paid, denominationArray) => {
 
 // example item price 86, paid 100, denomArray [ 10, 5, 1]
 
-atmChangeCalculator( 86, 100, [ 10, 5, 1])
+atmChangeCalculator( 82, 100, [ 10, 5, 1])
 
