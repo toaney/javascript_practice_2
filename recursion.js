@@ -12,28 +12,19 @@ const countdown = (output, num) => {
 console.log(countdown(output, 5));
 
 
-
-const findFactorial = (num) => {
+// find facorial
+const findFactorial = (num, acc = 1) => {
   if (num < 0) {
-    
+    return("Cannot find factorial of a negative number.")
   }
+  if (num > 0) {
+    console.log(num)
+    return findFactorial(num - 1, acc * num)
+  }
+  return acc
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(findFactorial(-3456))
 
 
 
