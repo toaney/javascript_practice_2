@@ -3,7 +3,10 @@ let arr4 = [ "a", "b", "c", "d", "e", "f" ];
 let arr2 = [ "g", "h", "i", "j", "k", "l" ];
 let arr3 = [ 1, 2, 3, 4, 5 ];
 
+// console.log(arr1.slice(1, 3).concat(arr1.slice(4))) //bcef
 
+console.log(arr1.shift());
+console.log(arr1)
 
 
 // console.log(arr3.reduce((total, val) => {
