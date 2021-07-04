@@ -1,15 +1,30 @@
-// count down
-let output = [];
-const countdown = (output, num) => {
-  if (num >= 0) {
-    // console.log(num);
-    output.push(num)
-    return countdown(output, num - 1);
+//count down
+const countdown = (num) => {
+  if (num < 0){
+    console.log("Cannot countdown from a negative number.");
+    return
+  } else {
+    console.log(num)
+    return countdown(num - 1)
   }
-  return output
 }
 
-console.log(countdown(output, 5));
+countdown(31)
+
+
+
+// count down
+// let output = [];
+// const countdown = (output, num) => {
+//   if (num >= 0) {
+//     // console.log(num);
+//     output.push(num)
+//     return countdown(output, num - 1);
+//   }
+//   return output
+// }
+
+// console.log(countdown(output, 5));
 
 
 // find facorial
@@ -24,7 +39,7 @@ const findFactorial = (num, acc = 1) => {
   return acc
 }
 
-console.log(findFactorial(-3456))
+// console.log(findFactorial(-3456))
 
 
 
